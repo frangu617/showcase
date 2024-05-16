@@ -19,7 +19,7 @@ function App() {
         ></Typography>
         <NavBar />
       </AppBar>
-      <Container>
+      <Container className="container">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutMe" element={<AboutMe />} />

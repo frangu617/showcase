@@ -12,7 +12,6 @@ import {
 } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import PhoneIcon from "@mui/icons-material/Phone";
 
 export default function Resume() {
@@ -29,50 +28,50 @@ export default function Resume() {
           Software Developer
         </Typography>
         <Box
-          component="span"
+          component="div"
           sx={{
             display: "flex",
             justifyContent: "center",
-            flexDirection: "column",
             alignItems: "center",
             gap: "8px",
             flexWrap: "wrap",
+            marginBottom: "16px",
           }}
         >
-          <Typography variant="body1" gutterBottom>
-            Moreno Valley, CA (Local | Remote | Relocate) | {" "}
-            <MuiLink
-              href="tel:951-807-9789"
-              sx={{
-                
-                alignItems: "center",
-                marginRight: "16px",
-              }}
-            >
-              <PhoneIcon sx={{ marginRight: "5px" }} />
-              951-807-9789
-            </MuiLink>
-            | {" "}
-            <MuiLink
-              href="mailto:franciscogutierrez617@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              sx={{  alignItems: "center", marginRight: "16px" }}
-            >
-              <EmailIcon sx={{ marginRight: "5px" }} />
-              franciscogutierrez617@gmail.com
-            </MuiLink>
-            | {" "}
-            <MuiLink
-              href="https://www.linkedin.com/in/francisco-e-gutierrez"
-              target="_blank"
-              rel="noopener noreferrer"
-              sx={{ alignItems: "center", marginRight: "16px" }}
-            >
-              <LinkedInIcon sx={{ marginRight: "5px" }} />
-              LinkedIn
-            </MuiLink>
-          </Typography>
+          <MuiLink
+            href="tel:951-807-9789"
+            sx={{
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <PhoneIcon sx={{ marginRight: "5px" }} />
+            951-807-9789
+          </MuiLink>
+          <MuiLink
+            href="mailto:franciscogutierrez617@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <EmailIcon sx={{ marginRight: "5px" }} />
+            franciscogutierrez617@gmail.com
+          </MuiLink>
+          <MuiLink
+            href="https://www.linkedin.com/in/francisco-e-gutierrez"
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <LinkedInIcon sx={{ marginRight: "5px" }} />
+            LinkedIn
+          </MuiLink>
         </Box>
         <Divider style={{ margin: "20px 0" }} />
         <Typography variant="h6" gutterBottom>
@@ -148,24 +147,24 @@ export default function Resume() {
               primary="Operations Office Manager | 1-800 Radiator Murrieta CA | 2016 - Present"
               secondary={
                 <>
-                  <Typography variant="body2">
+                  <Typography variant="body2" component="span">
                     Roles: Administrative operations, IT Support, program
                     management, customer sales and organization.
                   </Typography>
-                  <Typography variant="body2">
+                  <Typography variant="body2" component="span">
                     IT Support: Maintain onsite computers, tablets, printers,
                     firewalls.
                   </Typography>
-                  <Typography variant="body2">
+                  <Typography variant="body2" component="span">
                     Program Management: ensuring company meets goals and
                     objectives, data analysis and management, maintain
                     relationships with franchise warehouses.
                   </Typography>
-                  <Typography variant="body2">
+                  <Typography variant="body2" component="span">
                     Customer Sales: Service point of sales for customers and
                     ensure excellent customer service.
                   </Typography>
-                  <Typography variant="body2">
+                  <Typography variant="body2" component="span">
                     Inventory Management: Ensure timely delivery of parts and
                     solve inventory issues.
                   </Typography>
@@ -178,12 +177,12 @@ export default function Resume() {
               primary="Substitute Teacher | Moreno Valley Unified School District | Moreno Valley CA | 2020 - Present"
               secondary={
                 <>
-                  <Typography variant="body2">
+                  <Typography variant="body2" component="span">
                     Facilitate a positive learning environment for students
                     across various grade levels adapting teaching methods to
                     meet diverse learning needs.
                   </Typography>
-                  <Typography variant="body2">
+                  <Typography variant="body2" component="span">
                     Employ strong communication and interpersonal skills to
                     effectively manage classroom dynamics and foster student
                     engagement.
@@ -197,31 +196,31 @@ export default function Resume() {
               primary="Software Developer Apprentice | San Diego State University | 08/2023 – 04/2024"
               secondary={
                 <>
-                  <Typography variant="body2">
+                  <Typography variant="body2" component="span">
                     Simulated the role of a Software Developer who builds
                     websites, apps, software.
                   </Typography>
-                  <Typography variant="body2">
+                  <Typography variant="body2" component="span">
                     Created HTML/CSS and web accessibility mock websites.
                   </Typography>
-                  <Typography variant="body2">
+                  <Typography variant="body2" component="span">
                     Executed UI/UX customer research and Agile methodologies.
                   </Typography>
-                  <Typography variant="body2">
+                  <Typography variant="body2" component="span">
                     Completed JavaScript Front-End Development and Back-End
                     Development and API projects.
                   </Typography>
-                  <Typography variant="body2">
+                  <Typography variant="body2" component="span">
                     SQL Database modeling - Created normalized data models,
                     migrations to manage schema and content over time, and
                     common optimization techniques found in the software
                     industry.
                   </Typography>
-                  <Typography variant="body2">
+                  <Typography variant="body2" component="span">
                     Cybersecurity - Prioritized securing data and identifying
                     proper and improper access to information.
                   </Typography>
-                  <Typography variant="body2">
+                  <Typography variant="body2" component="span">
                     Built applications to support user authentication and
                     authorization.
                   </Typography>
