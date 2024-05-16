@@ -14,40 +14,20 @@ import {
 function Home() {
   return (
     <div>
-      {/* <AppBar position="static">
-        <Toolbar>
-          <Typography variant="h6" style={{ flexGrow: 1 }}>
-            Your Name
-          </Typography>
-          <Button color="inherit" component={Link} to="/">
-            Home
-          </Button>
-          <Button color="inherit" component={Link} to="/aboutMe">
-            About Me
-          </Button>
-          <Button color="inherit" component={Link} to="/resume">
-            Resume
-          </Button>
-          <Button color="inherit" component={Link} to="/portfolio">
-            Portfolio
-          </Button>
-        </Toolbar>
-      </AppBar> */}
       <Container>
         <header className="hero-section">
           <Typography variant="h2">Welcome to My Portfolio</Typography>
-          <Typography variant="h5">I'm a [Your Profession]</Typography>
+          <Typography variant="h5">I'm a Software Developer</Typography>
           <img
             src="path/to/your/photo.jpg"
-            alt="Your Name"
+            alt="Francisco Gutierrez"
             className="profile-photo"
           />
         </header>
         <section className="intro">
           <Typography variant="h6">About Me</Typography>
           <Typography variant="body1">
-            Brief introduction about yourself, your profession, and what you do.
-            Keep it concise and engaging.
+            I am Francisco Gutierrez, a versatile software development. Graduated from Westwood College with a BS in Software Development, and finished the San Diego State University software development certification.
           </Typography>
         </section>
         <Grid container spacing={3} className="navigation">

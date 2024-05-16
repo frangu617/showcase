@@ -7,7 +7,13 @@ import {
   ListItem,
   ListItemText,
   Divider,
+  Link as MuiLink,
+  Box,
 } from "@mui/material";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import EmailIcon from "@mui/icons-material/Email";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import PhoneIcon from "@mui/icons-material/Phone";
 
 export default function Resume() {
   return (
@@ -22,20 +28,52 @@ export default function Resume() {
         <Typography variant="subtitle1" gutterBottom>
           Software Developer
         </Typography>
-        <Typography variant="body1" gutterBottom>
-          Moreno Valley, CA (Local Remote Relocate) | 951-807-9789 |{" "}
-          <a href="mailto:franciscogutierrez617@gmail.com">
-            franciscogutierrez617@gmail.com
-          </a>{" "}
-          |{" "}
-          <a
-            href="https://www.linkedin.com/in/yourprofile"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
-        </Typography>
+        <Box
+          component="span"
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "8px",
+            flexWrap: "wrap",
+          }}
+        >
+          <Typography variant="body1" gutterBottom>
+            Moreno Valley, CA (Local | Remote | Relocate) | {" "}
+            <MuiLink
+              href="tel:951-807-9789"
+              sx={{
+                
+                alignItems: "center",
+                marginRight: "16px",
+              }}
+            >
+              <PhoneIcon sx={{ marginRight: "5px" }} />
+              951-807-9789
+            </MuiLink>
+            | {" "}
+            <MuiLink
+              href="mailto:franciscogutierrez617@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{  alignItems: "center", marginRight: "16px" }}
+            >
+              <EmailIcon sx={{ marginRight: "5px" }} />
+              franciscogutierrez617@gmail.com
+            </MuiLink>
+            | {" "}
+            <MuiLink
+              href="https://www.linkedin.com/in/francisco-e-gutierrez"
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{ alignItems: "center", marginRight: "16px" }}
+            >
+              <LinkedInIcon sx={{ marginRight: "5px" }} />
+              LinkedIn
+            </MuiLink>
+          </Typography>
+        </Box>
         <Divider style={{ margin: "20px 0" }} />
         <Typography variant="h6" gutterBottom>
           Professional Summary

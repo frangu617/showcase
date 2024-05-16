@@ -34,7 +34,12 @@ const NavBar = () => {
     <nav>
       <AppBar
         position="fixed"
-        style={{ marginBottom: "20px", boxShadow: "none" }}
+        style={{
+          marginBottom: "20px",
+          boxShadow: "none",
+          backgroundColor: "#f5f5f5",
+          color: "#000",
+        }}
       >
         <Toolbar>
           <Typography variant="h6" style={{ flexGrow: 1 }}>
