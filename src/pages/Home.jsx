@@ -1,16 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {
-  AppBar,
-  Toolbar,
   Typography,
   Button,
   Container,
   Grid,
   Paper,
+  CardMedia,
+  Box
 } from "@mui/material";
-// import "./Home.css";
-
 function Home() {
   return (
     <div>
@@ -71,6 +69,17 @@ function Home() {
             </Paper>
           </Grid>
         </Grid>
+        <Box sx={{ width : "100%",  margin : '0 auto' }}>
+          <CardMedia
+            component="img"
+            width="100%"
+            height = "200px"
+            image = "/assets/programming1.jpg"
+            alt = "programming"
+            title = "Programming"
+            fit = "cover"
+          />
+        </Box>
       </Container>
     </div>
   );
