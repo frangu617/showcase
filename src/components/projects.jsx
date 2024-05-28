@@ -9,12 +9,13 @@ const projects = [
     githubLink: "https://github.com/frangu617/dm-assist-ts",
   },
   {
-    title: "Project Two",
-    description: "A brief description of Project Two.",
+    title: "Survive!",
+    description:
+      "This was a milestone project for the San Diego State Universite software development certification. You play as the square trying to survive the incoming waves of triangle attackers",
     technologies: "HTML, CSS, JavaScript",
-    imageUrl: "/path/to/project-two-image.jpg",
-    projectLink: "https://www.example.com/project-two",
-    githubLink: "https://github.com/yourusername/project-two",
+    imageUrl: "/assets/Survive.png",
+    projectLink: "https://frangu617.github.io/milestone-project-game/",
+    githubLink: "https://github.com/frangu617/milestone-project-game",
   },
   // Add more projects as needed
 ];
