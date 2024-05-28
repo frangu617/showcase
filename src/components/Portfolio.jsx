@@ -75,10 +75,10 @@ export default function Portfolio() {
         <Typography variant="h6">Skills and Technologies</Typography>
         <Typography variant="body1">
           React, Node.js, MongoDB, HTML, CSS, JavaScript, Python, SQL, Git,
-          Agile methodologies, and more.
+          Agile methodologies, C++, C#, MongoDB, TypeScript and more.
         </Typography>
       </Box>
-      <Box mt={4}>
+      {/* <Box mt={4}>
         <Typography variant="h6">Testimonials</Typography>
         <Typography variant="body1" paragraph>
           "Francisco is a highly skilled developer who delivers quality work on
@@ -90,7 +90,7 @@ export default function Portfolio() {
           knowledgeable, responsive, and always willing to go the extra mile." -
           Client B
         </Typography>
-      </Box>
+      </Box> */}
       <Box mt={4}>
         <Typography variant="h6">Contact Me</Typography>
         <Typography variant="body1">
