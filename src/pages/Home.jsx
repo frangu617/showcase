@@ -16,11 +16,11 @@ function Home() {
         <header className="hero-section">
           <Typography variant="h2">Welcome to My Portfolio</Typography>
           <Typography variant="h5">I'm a Software Developer</Typography>
-          <img
+          {/* <img
             src="path/to/your/photo.jpg"
             alt="Francisco Gutierrez"
             className="profile-photo"
-          />
+          /> */}
           <Box sx={{ width: "100%", margin: "0 auto" }}>
             <CardMedia
               component="img"
