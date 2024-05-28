@@ -33,6 +33,7 @@ export default function Portfolio() {
                 height="140"
                 image={project.imageUrl}
                 alt={project.title}
+                
               />
               <CardContent>
                 <Typography variant="h5" component="div">
