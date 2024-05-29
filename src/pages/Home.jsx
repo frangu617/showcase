@@ -12,7 +12,7 @@ import {
 function Home() {
   return (
     <div>
-      <Container>
+      <Container style={{ marginBottom: "60px" }}>
         <header className="hero-section">
           <Typography variant="h2">Welcome to My Portfolio</Typography>
           <Typography variant="h5">I'm a Software Developer</Typography>
@@ -21,17 +21,36 @@ function Home() {
             alt="Francisco Gutierrez"
             className="profile-photo"
           />
+          <Box sx={{ width: "100%", margin: "0 auto" }}>
+            <CardMedia
+              component="img"
+              width="100%"
+              height="400px"
+              image="/assets/programming1.jpg"
+              alt="programming"
+              title="Programming"
+              fit="cover"
+            />
+          </Box>
         </header>
         <section className="intro">
-          <Typography variant="h6">About Me</Typography>
+          {/* <Typography variant="h6">About Me</Typography> */}
+          <br></br>
+          <br></br>
           <Typography variant="body1">
-            I am Francisco Gutierrez, a versatile software development. Graduated from Westwood College with a BS in Software Development, and finished the San Diego State University software development certification.
+            I am Francisco Gutierrez, a versatile software development.
+            Graduated from Westwood College with a BS in Software Development,
+            and finished the San Diego State University software development
+            certification.
           </Typography>
         </section>
+        <br></br>
+        <br></br>
         <Grid container spacing={3} className="navigation">
           <Grid item xs={12} md={4}>
             <Paper className="nav-card">
               <Typography variant="h6">About Me</Typography>
+
               <Button
                 variant="contained"
                 color="primary"
@@ -69,17 +88,6 @@ function Home() {
             </Paper>
           </Grid>
         </Grid>
-        <Box sx={{ width : "100%",  margin : '0 auto' }}>
-          <CardMedia
-            component="img"
-            width="100%"
-            height = "200px"
-            image = "/assets/programming1.jpg"
-            alt = "programming"
-            title = "Programming"
-            fit = "cover"
-          />
-        </Box>
       </Container>
     </div>
   );

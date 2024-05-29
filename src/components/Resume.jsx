@@ -16,7 +16,7 @@ import PhoneIcon from "@mui/icons-material/Phone";
 
 export default function Resume() {
   return (
-    <Container>
+    <Container sx={{ marginBottom: "60px" }}>
       <Typography variant="h4" component="h1" gutterBottom>
         Resume
       </Typography>

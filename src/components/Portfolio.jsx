@@ -36,13 +36,14 @@ export default function Portfolio() {
                 
               />
               <CardContent>
-                <Typography variant="h5" component="div">
+                <Typography variant="h5" component="div" style={{ fontWeight: "bold" }}>
                   {project.title}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   {project.description}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
+                  <br></br>
                   <strong>Technologies:</strong> {project.technologies}
                 </Typography>
               </CardContent>
