@@ -45,8 +45,9 @@ const NavBar = () => {
           <Typography variant="h6" style={{ flexGrow: 1 }}>
             <NavLink
               to="/"
-              style={{ textDecoration: "none", color: "inherit" }}
+              style={{ textDecoration: "none", color: "inherit", display: "flex", alignItems: "center" }}
             >
+              <img src="/assets/FG-Logo.svg" alt="" style={{ height: "50px" }}/>
               Francisco Gutierrez
             </NavLink>
           </Typography>

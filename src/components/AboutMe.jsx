@@ -15,7 +15,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 export default function AboutMe() {
   return (
-    <Container>
+    <Container sx={{ paddingLeft:0, paddingRight:0}}>
       <Typography variant="h4" component="h1" gutterBottom>
         About Me
       </Typography>
@@ -69,18 +69,22 @@ export default function AboutMe() {
                 rel="noopener noreferrer"
                 sx={{ display: "flex", alignItems: "center" }}
               >
-                <Card sx={{ display: "flex", alignItems: "center", padding: "5px" }}>
+                <Card
+                  sx={{ display: "flex", alignItems: "center", padding: "5px" }}
+                >
                   <LinkedInIcon sx={{ marginRight: "5px" }} />
                   LinkedIn
                 </Card>
               </MuiLink>
               <MuiLink
                 href="mailto:franciscogutierrez617@gmail.com"
-                sx={{ display: "flex", alignItems: "center"}}
+                sx={{ display: "flex", alignItems: "center" }}
               >
-                <Card sx={{ display: "flex", alignItems: "center", padding: "5px" }}>
-                <EmailIcon sx={{ marginRight: "5px" }} />
-                Email
+                <Card
+                  sx={{ display: "flex", alignItems: "center", padding: "5px" }}
+                >
+                  <EmailIcon sx={{ marginRight: "5px" }} />
+                  Email
                 </Card>
               </MuiLink>
               <MuiLink
@@ -89,9 +93,11 @@ export default function AboutMe() {
                 rel="noopener noreferrer"
                 sx={{ display: "flex", alignItems: "center" }}
               >
-                <Card sx={{ display: "flex", alignItems: "center", padding: "5px" }}>
-                <GitHubIcon sx={{ marginRight: "5px" }} />
-                GitHub
+                <Card
+                  sx={{ display: "flex", alignItems: "center", padding: "5px" }}
+                >
+                  <GitHubIcon sx={{ marginRight: "5px" }} />
+                  GitHub
                 </Card>
               </MuiLink>
             </Box>
